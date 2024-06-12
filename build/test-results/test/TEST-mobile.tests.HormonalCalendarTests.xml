@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Проверка модуля 'Гормональный календарь'" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-12T23:07:12" hostname="NB553582" time="46.658">
+  <properties/>
+  <testcase name="Проверка, что при установлении корректной информации открывается Гормональный календарь на текущую дату" classname="mobile.tests.HormonalCalendarTests" time="46.658"/>
+  <system-out><![CDATA[Запуск тестов на host: browserstack; platform: android; device: Samsung Galaxy S21 Ultra
+HTTP/1.1 200 OK
+{
+    "automation_session": {
+        "name": "first_test",
+        "duration": 44,
+        "os": "android",
+        "os_version": "11.0",
+        "browser_version": "app",
+        "browser": null,
+        "device": "Samsung Galaxy S21 Ultra",
+        "status": "done",
+        "hashed_id": "b7eeb8fc9969d0fd2124c2f98f32effed48ee2c5",
+        "reason": "CLIENT_STOPPED_SESSION",
+        "build_name": "browserstack-build-1",
+        "project_name": "BrowserStack Sample",
+        "build_hashed_id": "8ca59ebb1e2f707b5a40dbfc8a21dfc983cf18a5",
+        "logs": "https://app-automate.browserstack.com/builds/8ca59ebb1e2f707b5a40dbfc8a21dfc983cf18a5/sessions/b7eeb8fc9969d0fd2124c2f98f32effed48ee2c5/logs",
+        "browserstack_status": "done",
+        "created_at": "2024-06-12T23:07:13.000Z",
+        "browser_url": "https://app-automate.browserstack.com/builds/8ca59ebb1e2f707b5a40dbfc8a21dfc983cf18a5/sessions/b7eeb8fc9969d0fd2124c2f98f32effed48ee2c5",
+        "public_url": "https://app-automate.browserstack.com/builds/8ca59ebb1e2f707b5a40dbfc8a21dfc983cf18a5/sessions/b7eeb8fc9969d0fd2124c2f98f32effed48ee2c5?auth_token=57518b39f9d1a96a12d5d4edc92cb0f2f7089df7a28ba220a2378ade55a92e80",
+        "video_url": "https://app-automate.browserstack.com/sessions/b7eeb8fc9969d0fd2124c2f98f32effed48ee2c5/video?token=dk1TK3pNck4zRk55cS96ZStnRlpDbTZaa0JYcTZOdllIR0ZFTnZPcWZxbmpnTWZuOWpvc1NWcGp0T3pjQjREbWMycGdOYmlqNkZabHJMWE5mZytMNnc9PS0teXd6N3FmM0UvQ3FzVTJRajJsSzk5Zz09--b0c61fa05f761b43057239cac6f1c054d1828527&source=rest_api&diff=2.127551575",
+        "appium_logs_url": "https://api.browserstack.com/app-automate/builds/8ca59ebb1e2f707b5a40dbfc8a21dfc983cf18a5/sessions/b7eeb8fc9969d0fd2124c2f98f32effed48ee2c5/appiumlogs",
+        "device_logs_url": "https://api.browserstack.com/app-automate/builds/8ca59ebb1e2f707b5a40dbfc8a21dfc983cf18a5/sessions/b7eeb8fc9969d0fd2124c2f98f32effed48ee2c5/devicelogs",
+        "app_details": {
+            "app_url": "bs://67e68aac33ab17a78c1cfb21fae5969a1d90efc4",
+            "app_name": "com.sybirex.ilonandroid",
+            "app_version": "1.57",
+            "app_custom_id": null,
+            "uploaded_at": "2024-06-10T17:55:25.000Z"
+        },
+        "session_terminal_logs_url": "https://app-automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/8ca59ebb1e2f707b5a40dbfc8a21dfc983cf18a5/b7eeb8fc9969d0fd2124c2f98f32effed48ee2c5-terminal-logs.txt?response-content-type=text%2Fplain&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2XUQHUQMD5QJIXC7%2F20240612%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240612T230759Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8a8ad072b8fd48b3620c38c69a6e8182b16c2233f7c6bcdd845081fcdf80b495",
+        "build_terminal_logs_url": "https://app-automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/8ca59ebb1e2f707b5a40dbfc8a21dfc983cf18a5/terminal-logs.txt?response-content-type=text%2Fplain&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2XUQHUQMD5QJIXC7%2F20240612%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240612T230759Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=445a4eca73112cc187094e6a9bdccc4a99a7e6dee367368247f66831ee2b9213"
+    }
+}
+]]></system-out>
+  <system-err><![CDATA[июн. 13, 2024 2:07:12 AM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [app, browserstack.key, browserstack.user, build, device, name, os_version, project]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+июн. 13, 2024 2:07:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [app, browserstack.key, browserstack.user, build, device, name, os_version, project]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+]]></system-err>
+</testsuite>
