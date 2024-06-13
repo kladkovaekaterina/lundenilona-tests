@@ -33,8 +33,8 @@ public class SearchEngineTests extends TestBaseWebWithAttach {
     @Test
     @DisplayName("При клике по ссылке на странице с результатами поиска в Google должно происходить открытие сайта")
     void googleLinkClickTest() {
-        googleMainPage.openPage()
-                      .makeSearchQuery("lunden ilona");
+        googleMainPage.openPage();
+        googleMainPage.makeSearchQuery("lunden ilona");
         googleSearchResultsPage.clickOnLink(href);
         liMainPage.checkCorrectUrlOpened(href);
     }

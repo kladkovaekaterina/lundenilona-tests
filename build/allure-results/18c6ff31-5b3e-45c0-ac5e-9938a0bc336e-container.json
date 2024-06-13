@@ -1,1 +1,0 @@
-{"uuid":"18c6ff31-5b3e-45c0-ac5e-9938a0bc336e","name":"Проверка onboarding экрана","children":["12e0434d-7ba4-4364-8a22-d2d2e3dc0570"],"befores":[{"name":"beforeAll","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1718233679185,"stop":1718233679185}],"afters":[],"start":1718233679184,"stop":1718233716439}

@@ -1,1 +1,0 @@
-{"uuid":"b410bbb4-c50d-4c27-98ed-70cd71004742","name":"Проверка модуля 'Гормональный календарь'","children":["ce1ae985-a119-4c95-8c09-f9d81038dfdc"],"befores":[{"name":"beforeAll","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1718233632516,"stop":1718233632516}],"afters":[],"start":1718233632515,"stop":1718233679183}

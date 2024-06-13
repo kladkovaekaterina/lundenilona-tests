@@ -1,1 +1,0 @@
-{"uuid":"85427c64-bf6f-4b18-892a-817626bcf19d","name":"Проверка главной страницы сайта","children":["b4e4d070-d4b4-433d-bdad-c696c15a862e"],"befores":[{"name":"beforeAll","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1718232407500,"stop":1718232408429}],"afters":[],"start":1718232407454,"stop":1718232420737}

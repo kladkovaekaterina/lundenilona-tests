@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class GoogleSearchResultsPage {
 
-    private final SelenideElement firstLink = $("#fld_1").parent().$("div a");
+    private final SelenideElement firstLink = $("#search").$("div a");
     private final ElementsCollection linkList = $$("div a");
 
     @Step("Проверить, что ссылка на сайт присутствует в первом результате выдачи")

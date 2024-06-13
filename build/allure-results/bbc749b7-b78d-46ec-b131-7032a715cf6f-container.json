@@ -1,1 +1,0 @@
-{"uuid":"bbc749b7-b78d-46ec-b131-7032a715cf6f","name":"Проверка действий пользователя в корзине товаров","children":["f70c7164-b44e-438b-a714-6bfde8870521"],"befores":[{"name":"beforeAll","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1718232646812,"stop":1718232646815}],"afters":[],"start":1718232646812,"stop":1718232647811}
