@@ -9,9 +9,9 @@ public class TestData {
     static Faker faker = new Faker(new Locale("en"));
 
     public static String href = "https://lundenilona.ru/",
-                         userLogin = "kladkova92@mail.ru",
-                         userName = "Екатерина",
-                         userPass = "Kkater12!",
+                         userLogin = "testqaguru25kladkova@gmail.com",
+                         userName = "testqaguru",
+                         userPass = "Testqaguru25kladkova!",
                          wrongUserPass = generateRandomUserPass();
 
     public static String generateRandomUserPass() {
