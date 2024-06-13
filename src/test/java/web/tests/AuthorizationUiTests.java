@@ -10,13 +10,13 @@ import static web.tests.TestData.*;
 
 @Tag("auth-user")
 @Owner("e.kladkova")
-@DisplayName("Проверка действий пользователя в модуле авторизации")
+@DisplayName("WEB. Проверка действий пользователя в модуле авторизации")
 public class AuthorizationUiTests extends TestBaseWebWithAttach {
 
     MainPage MainPage = new MainPage();
 
     @Test
-    @DisplayName("Проверка успешной авторизации пользователя")
+    @DisplayName("WEB. Проверка успешной авторизации пользователя")
     void successfulUiAuthTest() {
         MainPage.openPage()
                 .clickLoginButton()
@@ -27,7 +27,7 @@ public class AuthorizationUiTests extends TestBaseWebWithAttach {
     }
 
     @Test
-    @DisplayName("Проверка неуспешной авторизации пользователя из-за неверного пароля")
+    @DisplayName("WEB. Проверка неуспешной авторизации пользователя из-за неверного пароля")
     void wrongPassUiAuthTest() {
         MainPage.openPage()
                 .clickLoginButton()

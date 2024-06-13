@@ -37,7 +37,6 @@ public class AuthApi {
         String authResponseDecoded = StringEscapeUtils.unescapeJava(successfulAuthResponse);
         assertEquals(String.format("""
                 {"login":"%s","type":"OK","message":"Вы успешно авторизованы"}""", userName), authResponseDecoded);
-
         return this;
     }
 

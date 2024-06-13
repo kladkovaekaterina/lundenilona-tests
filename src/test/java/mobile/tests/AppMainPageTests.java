@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 @Tag("main-page-app")
 @Owner("e.kladkova")
-@DisplayName("Проверка главной страницы приложения")
+@DisplayName("APP. Проверка главной страницы приложения")
 public class AppMainPageTests extends TestBaseMob {
 
     OnboardingCommonPage onboardingCommonPage = new OnboardingCommonPage();
@@ -21,7 +21,7 @@ public class AppMainPageTests extends TestBaseMob {
     MainPage mainPage = new MainPage();
 
     @Test
-    @DisplayName("Проверка успешной загрузки главного экрана")
+    @DisplayName("APP. Проверка успешной загрузки главного экрана")
     void successfulAppMainPageTest() {
         onboardingCommonPage.skipOnboardingPage();
         mainPage.checkPageDisplayedCorrectly(testTextData.getExpectedTextMainPage());
@@ -29,7 +29,7 @@ public class AppMainPageTests extends TestBaseMob {
 
     @ParameterizedTest(name = "Проверка, что при клике на иконку {0} и выборе иконки {1}, открывается корректная ссылка")
     @CsvFileSource(resources = "/mobile/clickResultsShouldContainSpecificData.csv", numLinesToSkip = 1)
-    @DisplayName("Проверка корректного открытия окна приложения по клику на иконку")
+    @DisplayName("APP. Проверка корректного открытия окна приложения по клику на иконку")
     void appShouldOpenCorrectLinkTest(String headerName, String linkName, String expectedText) {
         onboardingCommonPage.skipOnboardingPage();
         mainPage.clickButtonWhichContainsText(headerName, linkName);
@@ -37,7 +37,7 @@ public class AppMainPageTests extends TestBaseMob {
     }
 
     @Test
-    @DisplayName("Проверка успешной загрузки navigation bar")
+    @DisplayName("APP. Проверка успешной загрузки navigation bar")
     void successfulNavigationBarTest() {
         onboardingCommonPage.skipOnboardingPage();
         mainPage.checkNavigationBarIsVisible();

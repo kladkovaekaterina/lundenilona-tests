@@ -11,20 +11,20 @@ import static web.tests.TestData.wrongUserPass;
 
 @Tag("auth-server")
 @Owner("e.kladkova")
-@DisplayName("Проверка работы сервера в модуле авторизации")
+@DisplayName("WEB. Проверка работы сервера в модуле авторизации")
 public class AuthorizationApiTests extends TestBaseWebApiServer {
 
     AuthApi authApi = new AuthApi();
 
     @Test
-    @DisplayName("Проверка ответа сервера на успешную авторизацию пользователя")
+    @DisplayName("WEB. Проверка ответа сервера на успешную авторизацию пользователя")
     void successfulApiAuthTest() {
         authApi.makeAuthApiPostRequest(userPass);
         authApi.checkSuccessfulAuthApiResponse();
     }
 
     @Test
-    @DisplayName("Проверка ответа сервера на неуспешную авторизацию пользователя из-за неверного пароля")
+    @DisplayName("WEB. Проверка ответа сервера на неуспешную авторизацию пользователя из-за неверного пароля")
     void wrongPassApiAuthTest() {
         authApi.makeAuthApiPostRequest(wrongUserPass);
         authApi.checkWrongPassAuthApiResponse();

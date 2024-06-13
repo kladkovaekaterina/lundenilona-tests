@@ -11,14 +11,14 @@ import java.time.LocalDate;
 
 @Tag("hormonal-module")
 @Owner("e.kladkova")
-@DisplayName("Проверка модуля 'Гормональный календарь'")
+@DisplayName("APP. Проверка модуля 'Гормональный календарь'")
 public class HormonalCalendarTests extends TestBaseMob {
 
     HormonalCalendarPage hormonalCalendarPage = new HormonalCalendarPage();
     RandomUtils randomUtils = new RandomUtils();
 
     @Test
-    @DisplayName("Проверка, что при установлении корректной информации открывается Гормональный календарь на текущую дату")
+    @DisplayName("APP. Проверка, что при установлении корректной информации открывается Гормональный календарь на текущую дату")
     void checkCalendarOpensWithCurrentDateIfCorrectDataIsSetTest() {
         String currentDay = String.valueOf(LocalDate.now().getDayOfMonth());
         String currentMonth = LocalDate.now().getMonth().toString();

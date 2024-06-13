@@ -14,7 +14,7 @@ import static web.tests.TestData.href;
 
 @Tag("search-engine")
 @Owner("e.kladkova")
-@DisplayName("Проверка корректности отображения информации в поисковых сервисах")
+@DisplayName("WEB. Проверка корректности отображения информации в поисковых сервисах")
 public class SearchEngineTests extends TestBaseWebWithAttach {
 
     GoogleMainPage googleMainPage = new GoogleMainPage();
@@ -23,7 +23,7 @@ public class SearchEngineTests extends TestBaseWebWithAttach {
 
     @ParameterizedTest(name = "В результате поиска по ключевому слову {0} Google должен отобразить сайт на первой позиции на странице с результатами поиска")
     @ValueSource(strings = {"lunden ilona", "илона лунден"})
-    @DisplayName("Поисковый сервер отображает страницу на первой позиции")
+    @DisplayName("WEB. Поисковый сервер отображает страницу на первой позиции")
     void googleKeyWordsSearchTest(String searchQuery) {
         googleMainPage.openPage()
                       .makeSearchQuery(searchQuery);
@@ -31,7 +31,7 @@ public class SearchEngineTests extends TestBaseWebWithAttach {
     }
 
     @Test
-    @DisplayName("При клике по ссылке на странице с результатами поиска в Google должно происходить открытие сайта")
+    @DisplayName("WEB. При клике по ссылке на странице с результатами поиска в Google должно происходить открытие сайта")
     void googleLinkClickTest() {
         googleMainPage.openPage();
         googleMainPage.makeSearchQuery("lunden ilona");

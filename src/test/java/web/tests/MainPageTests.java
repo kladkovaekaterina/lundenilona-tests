@@ -15,7 +15,7 @@ import java.util.List;
 
 @Tag("main-page")
 @Owner("e.kladkova")
-@DisplayName("Проверка главной страницы сайта")
+@DisplayName("WEB. Проверка главной страницы сайта")
 public class MainPageTests extends TestBaseWebWithAttach {
 
     MainPage mainPage = new MainPage();
@@ -23,7 +23,7 @@ public class MainPageTests extends TestBaseWebWithAttach {
     RandomUtilsWeb randomUtilsWeb = new RandomUtilsWeb();
 
     @Test
-    @DisplayName("Проверка заголовков в верхней части страницы")
+    @DisplayName("WEB. Проверка заголовков в верхней части страницы")
     void websiteShouldDisplayCorrectHeadersTest() {
         List<String> expectedHeaders = Arrays.asList("Коллекции", "BEAUTY-сеты", "Отзывы", "Блог", "Доставка и оплата", "О нас", "Гостям", "Контакты");
         mainPage.openPage()
@@ -32,7 +32,7 @@ public class MainPageTests extends TestBaseWebWithAttach {
 
     @ParameterizedTest(name = "Проверка, что при наведении мыши на иконку {0} и клике на иконку {1}, открывается корректная ссылка")
     @CsvFileSource(resources = "/web/clickResultsShouldContainSpecificData.csv", numLinesToSkip = 1)
-    @DisplayName("Проверка корректного открытия статьи по клику на ссылку в заголовках")
+    @DisplayName("WEB. Проверка корректного открытия статьи по клику на ссылку в заголовках")
     void websiteShouldOpenCorrectLinkTest(String headerName, String linkName, String expectedText, String expectedHref) {
         mainPage.openPage()
                 .hoverOverAButton(headerName)
@@ -41,7 +41,7 @@ public class MainPageTests extends TestBaseWebWithAttach {
     }
 
     @Test
-    @DisplayName("Проверка, что регистрация неуспешна, если не пройдена капча")
+    @DisplayName("WEB. Проверка, что регистрация неуспешна, если не пройдена капча")
     void registrationIsUnsuccessfulWhenCaptchaIsNotPassedTest() {
         mainPage.openPage()
                 .clickLoginButton()

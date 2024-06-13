@@ -29,7 +29,6 @@ public class TestBaseWebWithAttach {
         Configuration.pageLoadStrategy = "eager";
         Configuration.browser = browserConfig.browserName();
         Configuration.browserVersion = browserConfig.browserVersion();
-        Configuration.browserSize = "1920x1080";
         RestAssured.baseURI = href;
 
         if (!"local".equals(System.getProperty("driver"))) {

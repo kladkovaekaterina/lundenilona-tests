@@ -9,14 +9,14 @@ import org.junit.jupiter.api.Test;
 
 @Tag("calories-module")
 @Owner("e.kladkova")
-@DisplayName("Проверка модуля 'Расчет калорий'")
+@DisplayName("APP. Проверка модуля 'Расчет калорий'")
 public class CaloriesCalculationTests extends TestBaseMob {
 
     CaloriesCalculationPage caloriesCalculationPage = new CaloriesCalculationPage();
     RandomUtils randomUtils = new RandomUtils();
 
     @Test
-    @DisplayName("Проверка, что при негативном числе рассчитанных калорий кнопка Next не кликабельна")
+    @DisplayName("APP. Проверка, что при негативном числе рассчитанных калорий кнопка Next не кликабельна")
     void nextWindowDoesNotOpenAfterNegativeCaloriesCalculationTest() {
         caloriesCalculationPage.openCaloriesCalculationPage("Расчет калорий")
                 .setWeight(randomUtils.littleNumber)
@@ -28,7 +28,7 @@ public class CaloriesCalculationTests extends TestBaseMob {
     }
 
     @Test
-    @DisplayName("Проверка, что при положительном числе рассчитанных калорий кнопка Next кликабельна и ведет на следующий экран")
+    @DisplayName("APP. Проверка, что при положительном числе рассчитанных калорий кнопка Next кликабельна и ведет на следующий экран")
     void nextWindowOpensAfterCorrectCaloriesCalculationTest() {
         caloriesCalculationPage.openCaloriesCalculationPage("Расчет калорий")
                 .setWeight(randomUtils.regularNumber)

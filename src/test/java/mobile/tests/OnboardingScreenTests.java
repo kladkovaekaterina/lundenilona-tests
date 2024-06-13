@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 
 @Tag("onboarding-page")
 @Owner("e.kladkova")
-@DisplayName("Проверка onboarding экрана")
+@DisplayName("APP. Проверка onboarding экрана")
 public class OnboardingScreenTests extends TestBaseMob {
 
     OnboardingScreenFirstPage onboardingScreenFirstPage = new OnboardingScreenFirstPage();
@@ -21,7 +21,7 @@ public class OnboardingScreenTests extends TestBaseMob {
     MainPage mainPage = new MainPage();
 
     @Test
-    @DisplayName("Проверка успешной загрузки и прохождения onboarding экрана")
+    @DisplayName("APP. Проверка успешной загрузки и прохождения onboarding экрана")
     void successfulGettingStartedPageTest() {
         onboardingScreenFirstPage.checkPageOpenedCorrectly(testTextData.getExpectedTextForFirstOnboardingPage())
                                  .pressContinueButton();
