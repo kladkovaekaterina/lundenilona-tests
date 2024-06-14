@@ -35,7 +35,7 @@ ____
 <a href="https://github.com/allure-framework/allure2"><img src="media/logos/allure-original.svg"          width="50" height="50"    title="Allure"/></a> 
 <a href="https://qameta.io/">                         <img src="media/logos/alluretestops - original.svg" width="50" height="50"    title="Allure TestOps"/></a>   
 <a href="https://www.jenkins.io/">                    <img src="media/logos/jenkins-original.svg"         width="50" height="50"    title="Jenkins"/></a>  
-<a href="https://www.atlassian.com/ru/software/jira/"><img src="media/logos/jira-original.svg"            width="50" height="50"    title="Jira"/></a>  
+<a href="https://www.atlassian.com/ru/software/jira"><img src="media/logos/jira-original.svg"            width="50" height="50"    title="Jira"/></a>  
 <a href="https://web.telegram.org/a/">                <img src="media/logos/telegram-original.svg"        width="50" height="50"    title="Telegram"/></a>
 <a href="https://developer.android.com/studio">       <img src="media/logos/androidstudio-original.svg"   width="50" height="50"    title="Android Studio"/></a>
 <a href="https://github.com/appium/appium-inspector"> <img src="media/logos/appiuminspector-original.png" width="50" height="50"    title="Appium Inspector"/></a>
@@ -148,7 +148,7 @@ MOBILE:
   - real (мобильные тесты запустятся на реальном девайсе)
 
 <a id="telegram"></a>
-### <a name="Уведомление в Telegram при помощи бота" style="color:black;"></a>Уведомление в Telegram при помощи бота:</a>
+### <a name="Уведомление в Telegram при помощи бота" style="color:black;"></a>Уведомление в Telegram при помощи бота</a>
 
 После завершения прогона автотестов, в соответствии с настройками в <code>Jenkins</code>, бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с результатом прохождения автотестов.
 
@@ -157,14 +157,14 @@ MOBILE:
 <a id="allure"></a>
 ### <a name="Allure отчет" style="color:black;"></a>Allure [отчет](https://jenkins.autotests.cloud/job/25-KatherineMiers-lundenilona-tests/5/allure/)</a>
 
-После завершения прогона автотестов, в соответствии с настройками в <code>Jenkins</code>, сформируется Allure отчет. Для просмотра отчета необходимо в окне "Build History" нажать на значок Allure, расположенный справа от номера билда. 
+После завершения прогона автотестов, в соответствии с настройками в <code>Jenkins</code>, сформируется Allure отчет. Для просмотра отчета необходимо в Jenkins в окне "Build History" нажать на значок Allure, расположенный справа от номера билда. 
 
 Пример основной страницы Allure отчёта: 
 
 ![image](https://github.com/kladkovaekaterina/lundenilona-tests/assets/93866007/ae2647b6-4a19-4739-84f8-c59f6a9c166a)
 
 <a id="video"></a>
-### <a name="Видео пример прохождения тестов на Selenoid" style="color:black;"></a>Видео пример прохождения тестов на Selenoid:</a>
+### <a name="Видео пример прохождения тестов на Selenoid" style="color:black;"></a>Видео пример прохождения тестов на Selenoid</a>
 
 Для дальнейшего анализа результатов прохожения автотестов в Allure отчете можно переключиться на вкладку "Behaviors". К каждому UI тесту в отчете прилагается видео прогона, скриншот и другие необходимые аттачменты.
 
