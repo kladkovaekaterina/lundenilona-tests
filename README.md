@@ -6,14 +6,15 @@
 - Автотесты написаны на языке <code>Java</code> 
 - В качестве сборщика используется <code>Gradle</code>
 - Использованы фреймворки <code>JUnit 5</code> и <code>Selenide</code>
-- При прогоне тестов в дефолтном режиме браузер запускается в <code>Selenoid</code>, приложение в <code>Browserstack</code>
 - Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота
+- При прогоне тестов в дефолтном режиме браузер запускается в <code>Selenoid</code>, приложение в <code>Browserstack</code> (одинаково для локального и удаленного запуска)
 - Осуществлена интеграция с TMS <code>Allure TestOps</code> и <code>Jira</code>
 
 ### Навигация:
 * <a href="#tools">Технологии и инструменты</a>
 * <a href="#cases">Список автоматизированных тест-кейсов</a>
 * <a href="#console">Запуск тестов из терминала</a>
+* <a href="#mobile">Особенности запуска мобильных тестов</a>
 * <a href="#jenkins">Запуск тестов из Jenkins</a>
 * <a href="#telegram">Уведомление в Telegram при помощи бота</a>
 * <a href="#allure">Allure отчет</a>
@@ -89,7 +90,7 @@ WEB:
   ./gradlew clean web_test -Ddriver=local
   ```
 
-MOBILE:
+MOBILE (у запуска мобильных тестов есть особенности, см. раздел "Особенности запуска мобильных тестов" ниже):
 - Команда для запуска на browserstack ферме:
   ```bash  
   ./gradlew clean mobile_test -DdeviceHost=browserstack
@@ -105,7 +106,7 @@ MOBILE:
 
 *Если необходимо запустить все тесты:*
 
-  - Команда для запуска с указанием ключей deviceHost (browserstack, emulation, real) и driver (remote, local)
+  - Команда для запуска с указанием ключей deviceHost (browserstack, emulation, real) и driver (remote, local) (у запуска мобильных тестов есть особенности, см. раздел "Особенности запуска мобильных тестов" ниже)
     ```bash  
     ./gradlew clean test -DdeviceHost=*указать значение* -Ddriver=*указать значение*
     ```
@@ -114,6 +115,31 @@ MOBILE:
     ```bash  
     ./gradlew clean test
     ```
+
+<a id="mobile"></a>
+### <a name="Особенности запуска мобильных тестов" style="color:black;"></a>Особенности запуска мобильных тестов</a>
+
+EMULATION (-DdeviceHost=emulation)
+
+Для того, чтобы на локальной машине корректно запустить мобильные тесты на эмуляторе, необходимо:
+
+- Установить необходимое ПО по [инструкции](https://autotest.how/appium-setup-for-local-android-tutorial-md)
+- Открыть <code>Andoid Studio</code>, в нем открыть Virtual Device Manager
+- Запустить образ Pixel 4 API 30 (Android 11.0 "R"), нажав на кнопку "Start" справа от названия образа (поскольку этот образ прописан в owner .properties проекта)
+- Открыть командную строку и ввести команду appuim
+- Запустить тесты
+
+REAL (-DdeviceHost=real)
+
+Для того, чтобы на локальной машине корректно запустить мобильные тесты на реальном устройстве, необходимо:
+
+- Установить необходимое ПО по [инструкции](https://autotest.how/appium-setup-for-local-android-tutorial-md)
+- Подключить реальное устройство через USB к локальной машине, на которой будут запускаться тесты
+- Открыть командную строку и через нее зайти в директорию platform-tools (там, где установлена SDK (например, C:\Users\user\AppData\Local\Android\Sdk\platform-tools))
+- Ввести команду ./adb devices (результат выполнения команды: слева отображается номер deviceName, справа слово device)
+- Изменить значение device.name в resources/mobile/host/real.properties на номер deviceName из предыдущего шага
+- Открыть командную строку и ввести команду appuim
+- Запустить тесты
 
 <a id="jenkins"></a>
 ### <a name="Запуск тестов из Jenkins" style="color:black;"></a>Запуск тестов из [Jenkins](https://jenkins.autotests.cloud/job/25-KatherineMiers-lundenilona-tests/)</a>
@@ -139,13 +165,10 @@ MOBILE:
 WEB:
 - DRIVER
   - remote (веб тесты запустятся на selenoid ферме)
-  - local (веб тесты запустятся на локальном браузере)
    
 MOBILE:
 - HOST
   - browserstack (мобильные тесты запустятся на browserstack ферме)
-  - emulation (мобильные тесты запустятся на эмуляторе)
-  - real (мобильные тесты запустятся на реальном девайсе)
 
 <a id="telegram"></a>
 ### <a name="Уведомление в Telegram при помощи бота" style="color:black;"></a>Уведомление в Telegram при помощи бота</a>
