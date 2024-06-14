@@ -75,7 +75,7 @@ ____
 - Параметризация: <code>Owner</code>
 
 <a id="cases"></a>
-### <a name="Список автоматизированных тест-кейсов" style="color:black;"></a>Список автоматизированных тест-кейсов</a>
+### <a name="Список автоматизированных тест-кейсов" style="color:black;"></a><img src="media/logos/alluretestops-original.svg" width="20" height="20"/></a> Список автоматизированных тест-кейсов</a>
 WEB:
 - [Проверка главной страницы сайта:](https://github.com/kladkovaekaterina/lundenilona-tests/blob/main/src/test/java/web/tests/MainPageTests.java)
   - Проверка заголовков в верхней части страницы
@@ -105,7 +105,7 @@ MOBILE:
   - Проверка, что при положительном числе рассчитанных калорий кнопка Next кликабельна и ведет на следующий экран
 
 <a id="console"></a>
-### <a name="Запуск тестов из терминала" style="color:black;"></a>Запуск тестов из терминала</a>
+### <a name="Запуск тестов из терминала" style="color:black;"></a><img src="media/logos/intellij-original.svg" width="20" height="20"/></a> Запуск тестов из терминала</a>
 
 Проект можно скачать на локальную машину и запускать тесты через терминал.
 
@@ -209,7 +209,7 @@ MOBILE:
 ![image](https://github.com/kladkovaekaterina/lundenilona-tests/assets/93866007/d4f81a78-898e-4494-a743-da9b0c059cfc)
 
 <a id="allure"></a>
-### <a name="Allure отчет" style="color:black;"></a>Allure [отчет](https://jenkins.autotests.cloud/job/25-KatherineMiers-lundenilona-tests/5/allure/)</a>
+### <a name="Allure отчет" style="color:black;"></a><img src="media/logos/allure-original.svg" width="20" height="20"/></a> Allure [отчет](https://jenkins.autotests.cloud/job/25-KatherineMiers-lundenilona-tests/5/allure/)</a>
 
 После завершения прогона автотестов, в соответствии с настройками в <code>Jenkins</code>, сформируется Allure отчет. Для просмотра отчета необходимо в Jenkins в окне "Build History" нажать на значок Allure, расположенный справа от номера билда. 
 
