@@ -202,7 +202,7 @@ MOBILE:
 Для того, чтобы связать TMS с задачами, которые ставят тестироващикам, в соответствии с настройками в <code>Allure TestOps</code>, в проекте реализована интеграция <code>Allure TestOps</code> с инструментом <code>Jira</code>.
 Например, в проекте есть @Disabled автотест, который требует доработки, это зафиксировано в <code>Allure TestOps</code>, вся информация по доработке ведется в тикете в <code>Jira</code>.
 
-![image](https://github.com/kladkovaekaterina/lundenilona-tests/assets/93866007/5969f44c-8aad-4c7f-bcfe-8811e2e28373)
+![image](https://github.com/kladkovaekaterina/lundenilona-tests/assets/93866007/cf3a05dc-7e39-4526-9d4f-7eef68123fe6)
 
 Страница с ISSUE, упомянутой в <code>Allure TestOps</code>:
 
