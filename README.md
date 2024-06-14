@@ -1,14 +1,16 @@
 ## Проект по автоматизации тестирования для веб-сайта [LUNDENILONA.RU](https://lundenilona.ru/) и мобильного андройд приложения LundenIlona
+<p align="center">
+<a href="https://lundenilona.ru/"> <img src="media/logos/li.png" width="130" height="33"/></a>
+</p>
+
 * Сайт LUNDENILONA.RU - онлайн-магазин авторской космецевтики, существующий с 2011 года.
 * Приложение LundenIlona - это женское приложение 6-в-1, включающее в себя расчет индивидуальной дневной калорийности, дневник питания, шагомер, планинг привлекательности, личный гормональный календарь, а также отдельный блок для беременных девушек.
 
 ### Основные особенности проекта:
-- Автотесты написаны на языке <code>Java</code> 
-- В качестве сборщика используется <code>Gradle</code>
-- Использованы фреймворки <code>JUnit 5</code> и <code>Selenide</code>
+- Проект состоит из веб-тестов (UI), API тестов и мобильных тестов (Android)
+- Для локального запуска есть зозможность запустить как все тесты, так и отдельно WEB (UI + API) и MOBILE
+- Для локального запуска в дефолтном режиме (без указания ключей) браузер запускается в <code>Selenoid</code>, приложение в <code>Browserstack</code>
 - Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота
-- При прогоне тестов в дефолтном режиме браузер запускается в <code>Selenoid</code>, приложение в <code>Browserstack</code> (одинаково для локального и удаленного запуска)
-- Осуществлена интеграция с TMS <code>Allure TestOps</code> и <code>Jira</code>
 
 ### Навигация:
 * <a href="#tools">Технологии и инструменты</a>
@@ -26,22 +28,51 @@ ____
 <a id="tools"></a>
 ### <a name="Технологии и инструменты" style="color:black;"></a>Технологии и инструменты</a>
 <p align="center">
-<a href="https://www.java.com/">                      <img src="media/logos/java-original.svg"            width="50" height="50"    title="Java"/></a> 
-<a href="https://www.jetbrains.com/idea/">            <img src="media/logos/intellij-original.svg"        width="50" height="50"    title="IntelliJ IDEA"/></a>   
-<a href="https://github.com/">                        <img src="media/logos/github-original.svg"          width="50" height="50"    title="Github"/></a>
-<a href="https://junit.org/junit5/">                  <img src="media/logos/junit-original.svg"           width="50" height="50"    title="JUnit 5"/></a>
-<a href="https://gradle.org/">                        <img src="media/logos/gradle-original.svg"          width="50" height="50"    title="Gradle"/></a>
-<a href="https://selenide.org/">                      <img src="media/logos/selenide-original.svg"        width="50" height="50"    title="Selenide"/></a>  
-<a href="https://aerokube.com/selenoid/">             <img src="media/logos/selenoid-original.svg"        width="50" height="50"    title="Selenoid"/></a>  
-<a href="https://github.com/allure-framework/allure2"><img src="media/logos/allure-original.svg"          width="50" height="50"    title="Allure"/></a> 
-<a href="https://qameta.io/">                         <img src="media/logos/alluretestops - original.svg" width="50" height="50"    title="Allure TestOps"/></a>   
-<a href="https://www.jenkins.io/">                    <img src="media/logos/jenkins-original.svg"         width="50" height="50"    title="Jenkins"/></a>  
-<a href="https://www.atlassian.com/ru/software/jira"><img src="media/logos/jira-original.svg"            width="50" height="50"    title="Jira"/></a>  
-<a href="https://web.telegram.org/a/">                <img src="media/logos/telegram-original.svg"        width="50" height="50"    title="Telegram"/></a>
-<a href="https://developer.android.com/studio">       <img src="media/logos/androidstudio-original.svg"   width="50" height="50"    title="Android Studio"/></a>
-<a href="https://github.com/appium/appium-inspector"> <img src="media/logos/appiuminspector-original.png" width="50" height="50"    title="Appium Inspector"/></a>
-<a href="https://www.browserstack.com/">              <img src="media/logos/browserstack-original.png"    width="50" height="50"    title="Browserstack"/></a>
+<a href="https://www.java.com/">                      <img src="media/logos/java-original.svg"            width="45" height="45"    title="Java"/></a> 
+<a href="https://www.jetbrains.com/idea/">            <img src="media/logos/intellij-original.svg"        width="45" height="45"    title="IntelliJ IDEA"/></a>   
+<a href="https://gradle.org/">                        <img src="media/logos/gradle-original.svg"          width="45" height="45"    title="Gradle"/></a>
+<a href="https://junit.org/junit5/">                  <img src="media/logos/junit-original.svg"           width="45" height="45"    title="JUnit 5"/></a>
+<a href="https://selenide.org/">                      <img src="media/logos/selenide-original.svg"        width="45" height="45"    title="Selenide"/></a>  
+<a href="https://rest-assured.io/">                   <img src="media/logos/restassured-original.png"     width="45" height="45"    title="Rest Assured"/></a>
+<a href="https://github.com/">                        <img src="media/logos/github-original.svg"          width="45" height="45"    title="Github"/></a>
+<a href="https://www.jenkins.io/">                    <img src="media/logos/jenkins-original.svg"         width="45" height="45"    title="Jenkins"/></a>  
+<a href="https://github.com/allure-framework/allure2"><img src="media/logos/allure-original.svg"          width="45" height="45"    title="Allure"/></a> 
+<a href="https://web.telegram.org/a/">                <img src="media/logos/telegram-original.svg"        width="45" height="45"    title="Telegram"/></a>
+<a href="https://aerokube.com/selenoid/">             <img src="media/logos/selenoid-original.svg"        width="45" height="45"    title="Selenoid"/></a>  
+<a href="https://www.browserstack.com/">              <img src="media/logos/browserstack-original.png"    width="45" height="45"    title="Browserstack"/></a>
+<a href="https://appium.io/docs/en/latest/">          <img src="media/logos/appium-original.png"          width="45" height="45"    title="Appium"/></a>
+<a href="https://developer.android.com/studio">       <img src="media/logos/androidstudio-original.svg"   width="45" height="45"    title="Android Studio"/></a>
+<a href="https://qameta.io/">                         <img src="media/logos/alluretestops-original.svg"   width="45" height="45"    title="Allure TestOps"/></a>   
+<a href="https://www.atlassian.com/ru/software/jira"> <img src="media/logos/jira-original.svg"            width="45" height="45"    title="Jira"/></a>  
 </p>
+
+- Используемый стек:
+  - <code>Java</code> (автотесты написаны на Java)
+  - <code>Gradle</code> (инструмент автоматизации сборки)
+  - <code>JUnit 5</code> (фреймворк для выполнения автотестов)
+  - <code>Selenide</code> (фреймворк для тестирования WEB и MOBILE)
+  - <code>Rest Assured</code> (фреймворк для тестирования REST-API)
+  
+
+- Используемая инфраструктура:
+  - <code>Github</code> (хранение кода)
+  - <code>Jenkins</code> (CI/CD для запуска тестов удаленно)
+  - <code>Allure</code> (визуализация результатов тестирования)
+  - <code>Telegram Bot</code> (инструмент для отправки результатов тестирования)
+  - <code>Selenoid</code> (ферма для удаленного запуска браузера в Docker контейнерах)
+  - <code>Browserstack</code> (ферма для удаленного запуска мобильных тестов)
+  - <code>Appium</code>, <code>AndroidStudio</code> (ПО для запуска мобильных тестов локально и на эмуляторе)
+
+
+- Интеграции:
+  - <code>Allure TestOps</code> (TMS)
+  - <code>Jira</code> (инструмент управления проектом)
+
+
+- Генерация данных: <code>Faker</code>
+
+
+- Параметризация: <code>Owner</code>
 
 <a id="cases"></a>
 ### <a name="Список автоматизированных тест-кейсов" style="color:black;"></a>Список автоматизированных тест-кейсов</a>
@@ -189,7 +220,12 @@ MOBILE:
 <a id="video"></a>
 ### <a name="Видео пример прохождения тестов на Selenoid" style="color:black;"></a>Видео пример прохождения тестов на Selenoid</a>
 
-Для дальнейшего анализа результатов прохожения автотестов в Allure отчете можно переключиться на вкладку "Behaviors". К каждому UI тесту в отчете прилагается видео прогона, скриншот и другие необходимые аттачменты.
+Для дальнейшего анализа результатов прохожения автотестов в Allure отчете можно переключиться на вкладку "Behaviors". 
+К каждому UI и MOBILE тесту в отчете прилагается:
+- видео прогона
+- скриншот в момент окончания автотеста
+- логи браузерной консоли
+- page source
 
 ![image](https://github.com/kladkovaekaterina/lundenilona-tests/assets/93866007/9c25dc4f-a6c6-41ab-9d9b-d4b0e30d69ad)
 
