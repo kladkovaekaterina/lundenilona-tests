@@ -168,15 +168,17 @@ MOBILE:
 
 Для дальнейшего анализа результатов прохожения автотестов в Allure отчете можно переключиться на вкладку "Behaviors". К каждому UI тесту в отчете прилагается видео прогона, скриншот и другие необходимые аттачменты.
 
+![image](https://github.com/kladkovaekaterina/lundenilona-tests/assets/93866007/9c25dc4f-a6c6-41ab-9d9b-d4b0e30d69ad)
+
 Видео пример прохождения тестов на WEB:
 
-<p align="center">
+<p align="left">
   <img title="web" src="media/gifs/web.gif">
 </p>
 
 Видео пример прохождения тестов на MOBILE:
 
-<p align="center">
+<p align="left">
   <img title="mobile" src="media/gifs/mobile.gif">
 </p>
 
@@ -199,6 +201,8 @@ MOBILE:
 
 Для того, чтобы связать TMS с задачами, которые ставят тестироващикам, в соответствии с настройками в <code>Allure TestOps</code>, в проекте реализована интеграция <code>Allure TestOps</code> с инструментом <code>Jira</code>.
 Например, в проекте есть @Disabled автотест, который требует доработки, это зафиксировано в <code>Allure TestOps</code>, вся информация по доработке ведется в тикете в <code>Jira</code>.
+
+![image](https://github.com/kladkovaekaterina/lundenilona-tests/assets/93866007/5969f44c-8aad-4c7f-bcfe-8811e2e28373)
 
 Страница с ISSUE, упомянутой в <code>Allure TestOps</code>:
 
