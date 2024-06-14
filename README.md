@@ -148,7 +148,7 @@ MOBILE (у запуска мобильных тестов есть особен�
     ```
 
 <a id="mobile"></a>
-### <a name="Особенности запуска мобильных тестов" style="color:black;"></a>Особенности запуска мобильных тестов</a>
+### <a name="Особенности запуска мобильных тестов" style="color:black;"></a><img src="media/logos/appium-original.png" width="20" height="20"/></a> Особенности запуска мобильных тестов</a>
 
 EMULATION (-DdeviceHost=emulation)
 
@@ -173,7 +173,7 @@ REAL (-DdeviceHost=real)
 - Запустить тесты
 
 <a id="jenkins"></a>
-### <a name="Запуск тестов из Jenkins" style="color:black;"></a>Запуск тестов из [Jenkins](https://jenkins.autotests.cloud/job/25-KatherineMiers-lundenilona-tests/)</a>
+### <a name="Запуск тестов из Jenkins" style="color:black;"></a><img src="media/logos/jenkins-original.svg" width="20" height="20"/></a> Запуск тестов из [Jenkins](https://jenkins.autotests.cloud/job/25-KatherineMiers-lundenilona-tests/)</a>
 
 Для того, чтобы тесты можно было запускать независимо от кого-либо, в <code>Jenkins</code> реализована джоба для удаленного запуска.
 
@@ -202,7 +202,7 @@ MOBILE:
   - browserstack (мобильные тесты запустятся на browserstack ферме)
 
 <a id="telegram"></a>
-### <a name="Уведомление в Telegram при помощи бота" style="color:black;"></a>Уведомление в Telegram при помощи бота</a>
+### <a name="Уведомление в Telegram при помощи бота" style="color:black;"></a><img src="media/logos/telegram-original.svg" width="20" height="20"/></a> Уведомление в Telegram при помощи бота</a>
 
 После завершения прогона автотестов, в соответствии с настройками в <code>Jenkins</code>, бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с результатом прохождения автотестов.
 
@@ -218,7 +218,7 @@ MOBILE:
 ![image](https://github.com/kladkovaekaterina/lundenilona-tests/assets/93866007/ae2647b6-4a19-4739-84f8-c59f6a9c166a)
 
 <a id="video"></a>
-### <a name="Видео пример прохождения тестов на Selenoid" style="color:black;"></a>Видео пример прохождения тестов на Selenoid</a>
+### <a name="Видео пример прохождения тестов на Selenoid" style="color:black;"></a><img src="media/logos/selenoid-original.svg" width="20" height="20"/></a> Видео пример прохождения тестов на Selenoid</a>
 
 Для дальнейшего анализа результатов прохожения автотестов в Allure отчете можно переключиться на вкладку "Behaviors". 
 К каждому UI и MOBILE тесту в отчете прилагается:
@@ -242,7 +242,7 @@ MOBILE:
 </p>
 
 <a id="allure-testops"></a>
-### <a name="Интеграция Jenkins с Allure TestOps" style="color:black;"></a>Интеграция Jenkins с [Allure TestOps](https://allure.autotests.cloud/project/4286)</a>
+### <a name="Интеграция Jenkins с Allure TestOps" style="color:black;"></a><img src="media/logos/alluretestops-original.svg" width="20" height="20"/></a> Интеграция Jenkins с [Allure TestOps](https://allure.autotests.cloud/project/4286)</a>
 
 Для того, чтобы поддерживать концепцию test cases as documentation, в соответствии с настройками в <code>Jenkins</code>, в проекте реализована интеграция <code>Jenkins</code> с TMS <code>Allure TestOps</code>. Таким образом ручной тестировщик может создавать в ней ручные тест-кейсы, а автотестировщик может создавать автотесты с Allure шагами и выгружать их в нее. Для этого необходимо:
 - Запустить сборку в Jenkins и дождаться ее выполнения
@@ -256,9 +256,9 @@ MOBILE:
 ![image](https://github.com/kladkovaekaterina/lundenilona-tests/assets/93866007/4009d78c-f295-4b34-8768-4d56c6df6f9a)
 
 <a id="jira"></a>
-### <a name="Интеграция Allure TestOps с Jira" style="color:black;"></a>Интеграция Allure TestOps с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1263)</a>
+### <a name="Интеграция Allure TestOps с Jira" style="color:black;"></a><img src="media/logos/jira-original.svg" width="20" height="20"/></a> Интеграция Allure TestOps с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1263)</a>
 
-Для того, чтобы связать TMS с задачами, которые ставят тестироващикам, в соответствии с настройками в <code>Allure TestOps</code>, в проекте реализована интеграция <code>Allure TestOps</code> с инструментом <code>Jira</code>.
+Для того, чтобы связать TMS с задачами, которые ставят тестировщикам, в соответствии с настройками в <code>Allure TestOps</code>, в проекте реализована интеграция <code>Allure TestOps</code> с инструментом <code>Jira</code>.
 Например, в проекте есть @Disabled автотест, который требует доработки, это зафиксировано в <code>Allure TestOps</code>, вся информация по доработке ведется в тикете в <code>Jira</code>.
 
 ![image](https://github.com/kladkovaekaterina/lundenilona-tests/assets/93866007/cf3a05dc-7e39-4526-9d4f-7eef68123fe6)
