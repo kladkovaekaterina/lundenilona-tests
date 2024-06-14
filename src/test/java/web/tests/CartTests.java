@@ -1,5 +1,6 @@
 package web.tests;
 
+import io.qameta.allure.Issue;
 import org.junit.jupiter.api.Disabled;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
@@ -9,6 +10,7 @@ import web.api.AuthApi;
 
 import static web.tests.TestData.userPass;
 
+@Issue("HOMEWORK-1263")
 @Disabled("Необходимо разобраться как вытащить скрытый session id из cookies и local storage")
 @Tag("cart")
 @Owner("e.kladkova")
