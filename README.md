@@ -201,14 +201,13 @@ MOBILE:
 - HOST
   - browserstack (мобильные тесты запустятся на browserstack ферме)
 
-### &nbsp;
+
 ### <a id="telegram" style="color:black"><img src="media/logos/telegram-original.svg" width="20" height="20"/> Уведомление в Telegram при помощи бота</a>
 
 После завершения прогона автотестов, в соответствии с настройками в <code>Jenkins</code>, бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с результатом прохождения автотестов.
 
 ![image](https://github.com/kladkovaekaterina/lundenilona-tests/assets/93866007/d4f81a78-898e-4494-a743-da9b0c059cfc)
 
-<p id="allure-anchor" style="margin-top: -100px; padding-top: 100px;"></p>
 
 ### <a id="allure" style="color:black"><img src="media/logos/allure-original.svg" width="20" height="20"/> Allure [отчет](https://jenkins.autotests.cloud/job/25-KatherineMiers-lundenilona-tests/allure/)</a>
 
