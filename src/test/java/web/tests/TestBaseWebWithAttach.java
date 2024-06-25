@@ -15,7 +15,7 @@ import web.helpers.AttachmentsWeb;
 import java.util.Map;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
-import static web.tests.TestData.href;
+import static web.data.TestData.liMainPageLink;
 
 public class TestBaseWebWithAttach {
 
@@ -25,12 +25,12 @@ public class TestBaseWebWithAttach {
     static void beforeAll() {
         BrowserConfig browserConfig = ConfigFactory.create(BrowserConfig.class, System.getProperties());
 
-        Configuration.baseUrl = href;
+        Configuration.baseUrl = liMainPageLink;
         Configuration.pageLoadStrategy = "eager";
         Configuration.browser = browserConfig.browserName();
         Configuration.browserVersion = browserConfig.browserVersion();
         Configuration.browserSize = "1920x1080";
-        RestAssured.baseURI = href;
+        RestAssured.baseURI = liMainPageLink;
 
         if (!"local".equals(System.getProperty("driver"))) {
             Configuration.remote  = browserConfig.remoteDriver();

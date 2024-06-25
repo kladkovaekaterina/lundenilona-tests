@@ -1,4 +1,4 @@
-package mobile.tests;
+package mobile.data;
 
 import lombok.Data;
 

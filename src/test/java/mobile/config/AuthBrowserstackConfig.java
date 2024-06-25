@@ -5,7 +5,7 @@ import org.aeonbits.owner.Config;
 @Config.Sources({
         "classpath:mobile/testing.properties"
 })
-public interface AuthConfig extends Config {
+public interface AuthBrowserstackConfig extends Config {
 
     @Key("auth.userName")
     String username();

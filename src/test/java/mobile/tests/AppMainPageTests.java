@@ -1,6 +1,7 @@
 package mobile.tests;
 
 import io.qameta.allure.Owner;
+import mobile.data.TestTextData;
 import mobile.pages.MainPage;
 import mobile.pages.onboarding.OnboardingCommonPage;
 import mobile.pages.subsidiary.CommonPage;

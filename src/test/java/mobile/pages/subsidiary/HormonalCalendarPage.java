@@ -7,7 +7,7 @@ import mobile.pages.MainPage;
 import mobile.pages.components.CalendarComponent;
 import mobile.pages.components.EditTextComponent;
 import mobile.pages.onboarding.OnboardingCommonPage;
-import mobile.tests.TestTextData;
+import mobile.data.TestTextData;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;

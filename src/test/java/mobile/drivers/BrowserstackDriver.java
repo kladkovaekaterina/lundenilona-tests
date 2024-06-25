@@ -7,7 +7,7 @@ import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import mobile.config.HostConfig;
-import mobile.config.AuthConfig;
+import mobile.config.AuthBrowserstackConfig;
 
 import javax.annotation.Nonnull;
 import java.net.MalformedURLException;
@@ -20,11 +20,11 @@ public class BrowserstackDriver implements WebDriverProvider {
     public WebDriver createDriver(@Nonnull Capabilities capabilities) {
         MutableCapabilities caps = new MutableCapabilities();
 
-        AuthConfig authConfig = ConfigFactory.create(AuthConfig.class, System.getProperties());
+        AuthBrowserstackConfig authBrowserstackConfig = ConfigFactory.create(AuthBrowserstackConfig.class, System.getProperties());
         HostConfig hostConfig = ConfigFactory.create(HostConfig.class, System.getProperties());
 
-        caps.setCapability("browserstack.user", authConfig.username());
-        caps.setCapability("browserstack.key", authConfig.authkey());
+        caps.setCapability("browserstack.user", authBrowserstackConfig.username());
+        caps.setCapability("browserstack.key", authBrowserstackConfig.authkey());
         caps.setCapability("app", hostConfig.appUrl());
         caps.setCapability("device", hostConfig.deviceName());
         caps.setCapability("os_version", hostConfig.platformVersion());
@@ -34,7 +34,7 @@ public class BrowserstackDriver implements WebDriverProvider {
 
         try {
             return new RemoteWebDriver(
-                    new URL(authConfig.url()), caps);
+                    new URL(authBrowserstackConfig.url()), caps);
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }

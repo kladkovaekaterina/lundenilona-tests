@@ -10,7 +10,7 @@ import web.pages.lundenilona.MainPage;
 import web.pages.searchengine.google.GoogleMainPage;
 import web.pages.searchengine.google.GoogleSearchResultsPage;
 
-import static web.tests.TestData.href;
+import static web.data.TestData.liMainPageLink;
 
 @Tag("search-engine")
 @Owner("e.kladkova")
@@ -27,7 +27,7 @@ public class SearchEngineTests extends TestBaseWebWithAttach {
     void googleKeyWordsSearchTest(String searchQuery) {
         googleMainPage.openPage()
                       .makeSearchQuery(searchQuery);
-        googleSearchResultsPage.checkSearchWithKeyWordsResults(href);
+        googleSearchResultsPage.checkSearchWithKeyWordsResults(liMainPageLink);
     }
 
     @Test
@@ -35,7 +35,7 @@ public class SearchEngineTests extends TestBaseWebWithAttach {
     void googleLinkClickTest() {
         googleMainPage.openPage();
         googleMainPage.makeSearchQuery("lunden ilona");
-        googleSearchResultsPage.clickOnLink(href);
-        liMainPage.checkCorrectUrlOpened(href);
+        googleSearchResultsPage.clickOnLink(liMainPageLink);
+        liMainPage.checkCorrectUrlOpened(liMainPageLink);
     }
 }

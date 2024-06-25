@@ -1,4 +1,4 @@
-package web.tests;
+package web.data;
 
 import com.github.javafaker.Faker;
 
@@ -8,10 +8,7 @@ public class TestData {
 
     static Faker faker = new Faker(new Locale("en"));
 
-    public static String href = "https://lundenilona.ru/",
-                         userLogin = "testqaguru25kladkova@gmail.com",
-                         userName = "testqaguru",
-                         userPass = "Testqaguru25kladkova!",
+    public static String liMainPageLink = "https://lundenilona.ru/",
                          wrongUserPass = generateRandomUserPass();
 
     public static String generateRandomUserPass() {

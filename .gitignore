@@ -14,5 +14,3 @@ build/
 
 ### Logs ###
 *.log
-/.gradle/
-/.idea/

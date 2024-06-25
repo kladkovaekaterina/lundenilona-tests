@@ -14,12 +14,12 @@ public class GoogleSearchResultsPage {
     private final ElementsCollection linkList = $$("div a");
 
     @Step("Проверить, что ссылка на сайт присутствует в первом результате выдачи")
-    public void checkSearchWithKeyWordsResults(String href) {
-        firstLink.shouldHave(attribute("href", href));
+    public void checkSearchWithKeyWordsResults(String liMainPageLink) {
+        firstLink.shouldHave(attribute("href", liMainPageLink));
     }
 
     @Step("Кликнуть по ссылке, ведущей на сайт")
-    public void clickOnLink(String href) {
-        linkList.findBy(attribute("href", href)).click();
+    public void clickOnLink(String liMainPageLink) {
+        linkList.findBy(attribute("href", liMainPageLink)).click();
     }
 }

@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static org.assertj.core.api.Assertions.*;
-import static web.tests.TestData.*;
+import static web.data.TestData.*;
 
 public class MainPage {
 
@@ -39,14 +39,14 @@ public class MainPage {
                                   captchaError = $("span[id=captcha_word-error]");
 
     @Step("Проверить, что открылась корректная ссылка сайта")
-    public void checkCorrectUrlOpened(String expectedHref) {
+    public void checkCorrectUrlOpened(String liMainPageLink) {
         switchTo().window(1);
-        assertThat(WebDriverRunner.url()).isEqualTo(expectedHref);
+        assertThat(WebDriverRunner.url()).isEqualTo(liMainPageLink);
     }
 
     @Step("Открыть главную страницу сайта")
     public MainPage openPage() {
-        open(href);
+        open(liMainPageLink);
 
         return this;
     }
