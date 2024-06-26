@@ -289,8 +289,7 @@ Telegram</code>, автоматически обрабатывает и отпр
 
 ### <a id="jira" style="color:black"><img src="media/logos/jira-original.svg" width="20" height="20"/> Интеграция Allure TestOps с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1263)</a>
 
-Для того, чтобы связать TMS с задачами, которые ставят тестировщикам, в соответствии с настройками в <code>Allure
-TestOps</code>, в проекте реализована интеграция <code>Allure TestOps</code> с инструментом <code>Jira</code>.
+Для того, чтобы связать TMS с задачами, которые ставят тестировщикам, в соответствии с настройками в <code>Allure TestOps</code>, в проекте реализована интеграция <code>Allure TestOps</code> с инструментом <code>Jira</code>.
 Например, в проекте есть @Disabled автотест, который требует доработки, это зафиксировано в <code>Allure TestOps</code>,
 вся информация по доработке ведется в тикете в <code>Jira</code>.
 
